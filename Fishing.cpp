@@ -1,10 +1,10 @@
 #include <iostream>
-#include <string> // подключаем строки
-#include <fstream> // подключаем файлы
+#include <string> 
+#include <fstream> 
 #include <filesystem>
 #include <sstream>
 
-using namespace std; // используем стандартное пространство имен
+using namespace std; 
 
 
 int getRandFish(int from, int to, bool need_init = false){
@@ -12,6 +12,7 @@ int getRandFish(int from, int to, bool need_init = false){
 			int result = rand() % (to - from + 1);
 			return result;
 		}
+
 
 class TextFile {
 	protected:
