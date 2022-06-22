@@ -5,18 +5,7 @@
 
 using namespace std;
 
-//class RandomPainter {
-//	private:
-//		int getRandomInt(int from, int to, bool NeedInit = false) {
-//			srand((unsigned)time(0));
-//			int result = rand() % (to - from + 1);
-//			return result;
-//		}
-//	public:
-//		void Paint(string Path) {
-//			ofstream Picture(Path);
-//		}
-//};
+
 
 
 int getRandomInt(int from, int to, bool NeedInit = false) {
@@ -45,7 +34,7 @@ void Paint(string path, int sizeH, int sizeV) {
 
 int main() {
 	getRandomInt(0, 1, true);
-	string path = "C:\\Users\\Alex_dev\\Desktop\\Prog\\skill\\WriteToFile\\Files\\";
+	string path = "";
 	Paint(path, 20, 32);
 }
 
