@@ -5,16 +5,7 @@
 using namespace std;
 
 
-//bool date_is_alpha(string date) {
-//	for(int i = 0; i < date.length(); i++) {
-//		if(isalpha(date[i])){
-//			cout << "Date could not contain symbols\n";
-//			return false;
-//		} 
-//	}
-//	return true;
-//}
-//
+
 
 bool check_name(string name) {
 	for(int i = 0; i < name.length(); i++) {
@@ -46,7 +37,6 @@ bool check_date(string date) {
 	if(date[2] != '.' && date[5] != '.') return false;
 	try {
 		if(_is_alpha(date)) {
-//			cout << "Access granted\n";
 			if(stoi(date.substr(0, 2)) > 29 && stoi(date.substr(3, 2)) == 2 || stoi(date.substr(0, 2)) > 31 && stoi(date.substr(3, 2)) != 2
 	 		|| stoi(date.substr(3, 2)) > 12 || stoi(date.substr(3,2)) == 0 || stoi(date.substr(0, 2)) == 0 ) {
 	 			cout << "incorrect date!\n";
@@ -91,6 +81,6 @@ void fill_in_statement(string path) {
 
 
 int main() {
-	string path = "C:\\Users\\Alex_dev\\Desktop\\Prog\\skill\\ReadFromFile\\Files\\in_statement.txt";
+	string path = "";
 	fill_in_statement(path); 
 }
