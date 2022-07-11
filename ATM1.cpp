@@ -124,9 +124,7 @@ class ValuedStorage {
 				cout << Name << "\t" << Amount << "\t" << Price << "\n";
 			}
 			sort( AllowedNow.begin(), AllowedNow.end(), [](int a, int b) {return a > b;} );
-//			for(int i = 0; i < AllowedNow.size(); i++) {
-//				cout << AllowedNow[i];
-//			}
+
 			cout << "\n";
 			int i = 0;
 			while( i < AllowedNow.size() && AllowedNow[i] > Need ) i++; // can do it binary...
@@ -154,7 +152,7 @@ class ValuedStorage {
 
 int main() {
 	
-	string path = "C:\\Users\\Alex_dev\\Desktop\\Prog\\skill\\WriteToFile\\files";
+	string path = "";
 	ValuedStorage *Sklad = new ValuedStorage(path);
 	string Nominals[] = {"1", "2", "3", "5", "10", "15", "25", "50", "100"};
 	int Prices[] = {1, 2, 3, 5, 10, 15, 25, 50, 100};
